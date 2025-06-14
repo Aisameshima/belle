@@ -1,0 +1,245 @@
+.wrapper {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+}
+.header .header-inner {
+    position: absolute;
+    background: #fff;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+.header h1{
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.header .header-menu {
+    position: relative;
+    align-items: center;
+    margin-right: 50px;
+}
+.header-menu ul {
+    /* 横並びにする */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* デフォルトの点を消す */
+    list-style: none;
+    margin: 27px;
+}
+.header-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 10px;
+}
+/* ハンバーガーメニューのスタイル */
+.header-menu-btn {
+    position: relative;
+    /* 親に相対指定 */
+}
+
+.hamburger {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: 0.3s;
+}
+/* バツ印に変化するスタイル */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+}
+/* ナビゲーションメニューのスタイル */
+.header-menu-nav.active {
+    display: flex;
+    right: 0px;
+}
+.header-menu-nav{
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 20px;
+    top: 0px;
+ /* 初期状態では画面の外に隠れている */
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    border: 1px solid #ddd;
+    transition: right 0.3s ease;
+}
+/* メニューリストのスタイル */
+.header-menu-nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 85px;
+}
+.header-menu-nav li {
+    padding: 20px;
+    margin: 10px;
+    color: #000;
+    list-style: none;
+    text-align: center;
+}
+.header-menu-nav a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/************* メニュー *************/
+main {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* ヒーローからメニュー */
+.hero {
+    display: flex;
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url(../../pics/img/top_image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+#home{
+    width: 50%;
+    margin: 0 auto;
+    border: double 5px #080808;
+}
+#home p{
+    font-size: 1.3rem;
+}
+.hero-inner{
+    max-width: 800px;
+    margin: 5% 0;
+}
+
+/* メニュー */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+main.home h2{
+    text-align: center;
+    font-size: 0.5rem;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333333a6;
+
+}
+section home{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: double 5px #383b3b;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto 20px ;
+}
+.about_myself {
+        width: 200px;
+        margin: 20px auto;
+        padding: 20px;
+
+}
+.contents-wrapper .about_myself p{
+    text-align: center;
+    color: #666;
+    margin: 20px 0;
+}
+
+
+/************* Works *************/
+#works h2{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.works-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 40px 30px 40px;
+    box-sizing: border-box;
+    background-color: #863f3f;
+}
+.work-item{
+    width: 200px;
+    height: 200px;
+    margin:20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/************* Footer *************/
+footer {
+    max-width: 100%;
+    background-color: #dcdcdc;
+    padding: 20px;
+    height: 20vh;
+    box-sizing: border-box;
+}
+
+

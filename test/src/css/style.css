@@ -49,7 +49,7 @@
 
 .header .header-menu {
     position: relative;
-    align-items: flex-start;
+    align-items:end;
     display: flex;
     justify-content: space-between;
 }
@@ -364,7 +364,7 @@ footer {
 
 footer p {
     text-align: center;
-    color: #666;
+    color: #fff;
     font-size: 0.8rem;
     margin-top: 20px;
 }

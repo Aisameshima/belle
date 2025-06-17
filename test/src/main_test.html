@@ -16,48 +16,49 @@
 
 <body>
 
-    <header class="header" data-header>
-      <div class="header-inner">
-        <div class="header-logo">
-          <h1>デザインをつくる</h1>
-        </div>
+<header class="header" data-header>
+  <div class="header-inner">
+    <div class="header-logo">
+      <h1>デザインをつくる</h1>
+    </div>
 
-      <div class="header-right">
-        <nav class="header-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-menu-btn">
-            <div class="hamburger" id="hamburger">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
-      </div>
-        <div id="header-menu-nav" class="header-menu-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+  <div class="header-right">
+    <nav class="header-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-menu-btn">
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-      </div>
-  </header>
-    <script>
-      // ハンバーガーメニューのクリックイベント
-      const hamburger = document.getElementById('hamburger');
-      const menu = document.getElementById('header-menu-nav');
-      hamburger.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-        // ここでハンバーガーアイコンを切り替える
-      });
-    </script>
+  </div>
+    <div id="header-menu-nav" class="header-menu-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</header>
+<script>
+  // ハンバーガーメニューのクリックイベント
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('header-menu-nav');
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    // ここでハンバーガーアイコンを切り替える
+  });
+</script>
   <div class="wrapper">
       <main>
         <div class="hero">
@@ -127,26 +128,26 @@
           </section>
       </main>
     </div>
-      <footer>
-        <div class="footer-inner">
-          <div class="footer-logo">
-            <h1>Ai Sameshima</h1>
-          </div>
-            <ul class="footer-menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Works</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          <p>&copy; 2025 My Page</p>
-          <p>Follow me on social media:
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          </p>
-        </div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <h1>Ai Sameshima</h1>
+    </div>
+      <ul class="footer-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    <p>&copy; 2025 My Page</p>
+    <p>Follow me on social media:
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </p>
+  </div>
 
-      </footer>
+</footer>
 
 </body>
 

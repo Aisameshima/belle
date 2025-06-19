@@ -90,7 +90,7 @@
                 display: none;
                 /* モバイルで非表示 */
             }
-    
+
             .header-menu.open ul {
                 display: flex;
                 /* メニューを開いたとき表示 */
@@ -102,7 +102,7 @@
                 padding: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
-    
+
             .hamburger {
                 display: flex;
             }   }

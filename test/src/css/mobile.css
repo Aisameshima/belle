@@ -1,12 +1,4 @@
 
-
-@media (min-width: 769px) {
-    .hamburger {
-        display: none;
-        /* デスクトップでは非表示 */
-    }
-}
-
 /* ハンバーガーメニューのスタイル */
 @media (max-width: 768px) {
     .hamburger {
@@ -105,4 +97,28 @@
 
             .hamburger {
                 display: flex;
-            }   }
+            }  
+        }}
+        {@media (max-width: 480px) {
+            .header-menu ul {
+                display: none;
+                /* モバイルで非表示 */
+            }
+
+            .header-menu.open ul {
+                display: flex;
+                /* メニューを開いたとき表示 */
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+                background-color: white;
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .hamburger {
+                display: flex;
+            }  
+
+        }

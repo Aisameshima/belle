@@ -100,9 +100,9 @@
             }  
         }}
         {@media (max-width: 480px) {
-            .header-menu ul {
+            .header-menu {
                 display: none;
-                /* モバイルで非表示 */
+                /* モバイルで非表示 *
             }
 
             .header-menu.open ul {

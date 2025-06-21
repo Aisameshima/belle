@@ -28,8 +28,19 @@
     top: 0;
     overflow: hidden;
 }
-.left-header .header-logo{
-    font-family: "Delius", cursive;
+.left-header{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+/* フォントの読み込み:? */
+@font-face {
+    font-family: "YosugaraVer1.2";
+    src: url("/Users/sameshimaai/Documents/belle/test/font/yosugaraver1_2.ttf") format("ttf");   }
+
+.left-header .header-logo h1{
+    font-family: "YosugaraVer1.2", cursive;
     font-weight: 400;
     padding: 0 0 0 40px;
     font-style: normal;
@@ -39,17 +50,18 @@
     position: relative;
     align-items: flex-start;
     display: flex;
-    gap:calc(100% - 200px);
+    gap: 20px;
     justify-content: space-between;
 }
 .header-menu ul {
     /* 横並びにする */
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     /* デフォルトの点を消す */
     list-style: none;
-    margin: 27px;
+    margin: 0;
 }
 .header-menu a {
     text-decoration: none;
@@ -59,8 +71,9 @@
 }
 .right-header{
     display: flex;
-    justify-content: flex-end;
-    align-items:end;
+    align-items: center;
+    margin-left: auto;
+        /* ← 左側要素から離れて右に寄せる */;
 
 }
 .header-menu-btn{
@@ -88,6 +101,7 @@
     transition: right 0.3s ease;
 
 }
+
 
 
 /************* メニュー *************/

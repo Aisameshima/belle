@@ -6,6 +6,7 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -30,7 +31,9 @@
           </ul>
         </nav>
       </div>
-      <div class="">
+
+
+      <div class="right-header">
         <div class="header-menu-btn">
           <div class="hamburger" id="hamburger">
             <div class="bar"></div>
@@ -38,26 +41,32 @@
             <div class="bar"></div>
           </div>
       </div>
-
-
-    </header>
-    <div id="header-menu-nav" class="header-menu-nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
     </div>
+      <div id="header-menu-nav" class="header-menu-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+
+  </header>
+
     <script>
       // ハンバーガーメニューのクリックイベント
-      const hamburger = document.getElementById('hamburger');
-      const menu = document.getElementById('header-menu-nav');
-      hamburger.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-        // ここでハンバーガーアイコンを切り替える
-      });
+      document.addEventListener('DOMContentLoaded', () => {
+          const hamburger = document.getElementById('hamburger');
+          const menu = document.getElementById('header-menu-nav');
+
+          if (hamburger && menu) {
+            hamburger.addEventListener('click', () => {
+              menu.classList.toggle('active');
+              hamburger.classList.toggle('active');
+            });
+          }
+        });
     </script>
   <div class="wrapper">
       <main>

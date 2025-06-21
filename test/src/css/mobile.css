@@ -1,4 +1,8 @@
+@media (max-width: 1020px) and (min-width: 768px){
 /* ハンバーガーメニューのスタイル */
+.header-menu{
+    display: none;
+}
 .header-menu-btn {
     position: relative;
     /* 親に相対指定 */
@@ -84,4 +88,9 @@
     color: #333;
     font-size: 1.2rem;
     font-weight: bold;
+}
+}
+@media (min-width: 768px) {
+.header .header-menu ul{
+            display: none;   }
 }

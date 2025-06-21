@@ -16,7 +16,7 @@
 }
 
 .header .header-inner {
-    position: absolute;
+    position: relative;
     background: #fff;
     border-left: none;
     border-right: none;
@@ -24,22 +24,22 @@
     /* ← 左寄せに変更 */
     justify-content: flex-start;
     /* ロゴとメニューの間に適度な間隔 */
-    gap: 40px;
     width: 100%;
     top: 0;
     overflow: hidden;
 }
-.header .header-logo{
+.left-header .header-logo{
     font-family: "Delius", cursive;
     font-weight: 400;
     padding: 0 0 0 40px;
     font-style: normal;
 
 }
-.header .header-menu {
+.left-header .header-menu {
     position: relative;
     align-items: flex-start;
     display: flex;
+    gap:calc(100% - 200px);
     justify-content: space-between;
 }
 .header-menu ul {
@@ -58,8 +58,37 @@
     margin: 10px;
 }
 .right-header{
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items:end;
+
 }
+.header-menu-btn{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header-menu-nav{
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 20px;
+    top: 0px;
+    /* 初期状態では画面の外に隠れている */
+    right: -100%;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #ddd;
+    transition: right 0.3s ease;
+
+}
+
 
 /************* メニュー *************/
 main {

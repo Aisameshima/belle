@@ -1,4 +1,12 @@
 @media  (max-width: 768px){
+.wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: Noto Sans JP, sans-serif;
+        padding: 0 20px 0 20px;
+
+    }
 /* ハンバーガーメニューのスタイル */
 .right-header {
     display: flex;
@@ -109,6 +117,14 @@
 }
 
 @media (max-width: 428px) {
+.wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: Noto Sans JP, sans-serif;
+        padding: 0 20px 0 20px;
+
+}
 
 .hamburger {
     display: flex;

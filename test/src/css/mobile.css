@@ -67,7 +67,7 @@
 /* ナビゲーションメニューのスタイル */
 .header-menu-nav.active {
     display: flex;
-    right: 0px;
+    right: -40px;
 }
 
 /* 初期状態では画面の外に隠れている */
@@ -156,7 +156,7 @@
 /* ナビゲーションメニューのスタイル */
 .header-menu-nav.active {
     display: flex;
-    right: -40px;
+    right: 0px;
 
 }
 

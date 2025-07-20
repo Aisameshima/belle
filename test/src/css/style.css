@@ -34,12 +34,12 @@
         gap: 40px;
     }
 
-/* フォントの読み込み:? */
+/* フォントの読み込み */
 @font-face {
     font-family: "YosugaraVer1.2";
     src: url("../../font/yosugaraver1_2.ttf") format("truetype");   }
 
-.left-header .header-logo h1{
+.title-logo{
     font-family: "YosugaraVer1.2", sans-serif;
     font-weight: 400;
     padding: 0 0 0 40px;
@@ -95,7 +95,6 @@
     /* 初期状態では画面の外に隠れている */
     right: -100%;
     width: 100%;
-    position: absolute;
     border: 1px solid #ddd;
     transition: right 0.3s ease;
 
@@ -130,13 +129,13 @@ main {
     margin: 0 auto;
 
 }
-#home{
+.home{
     width: 50%;
     margin: 0 auto;
     border: double 5px #5b4242;
 
 }
-#home p{
+.home p{
     font-size: 1.3rem;
 }
 .hero-inner{
@@ -166,7 +165,7 @@ main.home h2{
     color: #333333a6;
 
 }
-section home{
+.home{
     width: 70%;
     margin: 0 auto;
     padding: 10px;

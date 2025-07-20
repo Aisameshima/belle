@@ -4,6 +4,9 @@
         max-width: 100%;
         font-family: Noto Sans JP, sans-serif;
     }
+.hero {
+    background-image: url(../../pics/img/top_image_mobile.jpg);
+}
 /* ハンバーガーメニューのスタイル */
 .right-header {
     display: flex;

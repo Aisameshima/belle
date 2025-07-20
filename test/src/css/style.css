@@ -3,8 +3,6 @@
     max-width: 100%;
     margin: 0 auto;
     font-family: Noto Sans JP, sans-serif;
-    padding: 0 20px 0 20px;
-
 }
 .header {
     position: absolute;
@@ -12,7 +10,6 @@
     left: 0;
     height: 100px;
     width: 100%;
-    padding: 0 20px 0 20px;
 }
 
 .header .header-inner {
@@ -95,6 +92,7 @@
     /* 初期状態では画面の外に隠れている */
     right: -100%;
     width: 100%;
+    position: absolute;
     border: 1px solid #ddd;
     transition: right 0.3s ease;
 
@@ -165,7 +163,7 @@ main.home h2{
     color: #333333a6;
 
 }
-.home{
+home{
     width: 70%;
     margin: 0 auto;
     padding: 10px;

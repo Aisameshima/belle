@@ -2,10 +2,7 @@
 .wrapper {
         width: 100%;
         max-width: 100%;
-        margin: 0 auto;
         font-family: Noto Sans JP, sans-serif;
-        padding: 0 20px 0 20px;
-
     }
 /* ハンバーガーメニューのスタイル */
 .right-header {
@@ -48,7 +45,7 @@
 }
 .header-menu-nav.active {
     display: flex;
-    right: 0px;
+    right: 100px;
 }
 
 
@@ -117,15 +114,14 @@
 }
 
 @media (max-width: 428px) {
-.wrapper {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        font-family: Noto Sans JP, sans-serif;
-        padding: 0 20px 0 20px;
-
-}
-
+.title-logo {
+        font-size: 1.5rem;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
 .hamburger {
     display: flex;
     margin: auto;
@@ -163,12 +159,5 @@
     right: -40px;
 
 }
-.title-logo{
-    font-size: 1.5rem;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 10px 0;
-    font-weight: bold;
-}
+
 }

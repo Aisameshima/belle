@@ -244,13 +244,10 @@ home{
 .content li {
     min-width: 200px;
     /* 各要素の幅 */
-    height: 150px;
+    height: 200px;
     flex-shrink: 0;
     /* 縮まないようにする */
     scroll-snap-align: center;
-    /* スナップ位置を中央に */
-    border: 2px solid #888;
-    border-radius: 10px;
     background-color: #f5f5f5;
     display: flex;
     align-items: center;

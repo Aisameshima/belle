@@ -39,20 +39,21 @@
 .title-logo{
     font-family: "YosugaraVer1.2", sans-serif;
     font-weight: 400;
-    padding: 0 0 0 40px;
+    padding: 0 40px 0 40px;
 
 }
 .left-header .header-menu {
     position: relative;
     align-items: flex-start;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-between;
 }
 .header-menu ul {
     /* 横並びにする */
     display: flex;
-    gap: 20px;
+    height: 100%;
+    gap: 30px;
     justify-content: space-between;
     align-items: center;
     /* デフォルトの点を消す */
@@ -64,8 +65,14 @@
     color: #333;
     padding: 10px;
     margin: 10px;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+.nav-item:hover{
+    color: #dd929e;
+    transition: all 0.5s;
+}
+
 .right-header{
     display: flex;
     align-items: center;
@@ -98,8 +105,6 @@
     transition: right 0.3s ease;
 
 }
-
-
 
 /************* メニュー *************/
 main {
@@ -241,40 +246,138 @@ home{
     margin: 40px auto;
     box-sizing: border-box;
 }
-/* スクロール可能なカルーセルレイアウト */
-.carousel {
-    overflow-x: auto;
-    /* 横スクロールを有効にする */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+/* ----------------------*
+ * カルーセル　コンテナー
+ * ----------------------*/
+.container {
+    --item-width: 600px;
+    --item-height: 300px;
+    width: var(--item-width);
+    position: relative;
+    margin-bottom: 40px;
+    /* 各パーツ配置をグリッドでレイアウト */
+    display: grid;
+    grid-template-areas: "item item item" "left markers right";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin:auto;
+    width: 100%;
+    height: 400px;
 }
-.content {
-    display: flex;
-    /* 横並びにする */
-    gap: 15px;
-    /* 要素間のスペース */
+/* ----------------------*
+ * カルーセル
+ * ----------------------*/
+.carousel {
+    width: 100%;
+    display: grid;
+    /* アイテムを横並びにする */
+    grid-auto-flow: column;
+    grid-area: item;
+    /* 次のスライドとの間隔 */
+    gap: 50px;
     overflow-x: auto;
-    /* 横スクロール可能に */
+    /* X方向にスナップ */
     scroll-snap-type: x mandatory;
-    /* スナップ効果を有効に */
-    padding: 20px;
-    margin: 0;
-    list-style: none;
+    /* 1度に1枚ずつ移動 */
+    scroll-snap-stop: always;
+    /* スムーズにスクロールさせる */
+    scroll-behavior: smooth;
+    /* インジケーターの表示 */
+    scroll-marker-group: after;
+    /* スクロールバー非表示 */
+    scrollbar-width: none;
+
+    /* 前へ・次へボタン */
+    &::scroll-button(*) {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 50%;
+        color: #dd929e;
+        border: 1px solid #dd929e;
+        background-color: #fff;
+    }
+    /* ホバー時スタイル */
+    @media (any-hover: hover) {
+        &::scroll-button(*):not(:disabled):hover {
+            background-color: #dd929e;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+
+    /* 非活性時スタイル */
+    &::scroll-button(*):disabled {
+        color: darkgray;
+        border: 1px solid lightgray;
+    }
+
+    /* 前へボタン（左） */
+    &::scroll-button(left) {
+        /* 表示内容 / 代替テキスト */
+        content: "◀" / "前へ";
+        grid-area: left;
+        justify-self: end;
+    }
+
+    /* 次へボタン（右） */
+    &::scroll-button(right) {
+        /* 表示内容 / 代替テキスト */
+        content: "▶" / "次へ";
+        grid-area: right;
+    }
+    /* インジケーター（コンテナー） */
+    &::scroll-marker-group{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        grid-area: markers;
+        align-items: center;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        margin: 0 auto;
+    }
+}
+/* ----------------------*
+ * カルーセルの画像アイテム
+ * ----------------------*/
+.item {
+        min-width: 250px;
+        height: 300px;
+        flex-shrink: 0;
+        /* 縮まないようにする */
+        scroll-snap-align: center;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        box-shadow: 8px 8px 0px 0 #fadadf;
+
+    /* インジケーター */
+    &::scroll-marker {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: lightgray;
+        border-radius: 50%;
+        transition: background-color 0.2s;
+        flex-shrink: 0;
+    }
+
+    /* インジケーターのカレントスタイル */
+    &::scroll-marker:target-current {
+        background-color: #dd929e;
+        border-radius: 50%;
+    }
 }
 
-.content li {
-    min-width: 250px;
-    height: 300px;
-    flex-shrink: 0;
-    /* 縮まないようにする */
-    scroll-snap-align: center;
-    background-color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    box-shadow: 8px 8px 0px 0 #fadadf;
-}
+
+
+
+/* WORK　part2内容 */
 .work-item {
     width: 200px;
     height: 200px;

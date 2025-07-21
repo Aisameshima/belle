@@ -1,3 +1,17 @@
+/*縦向きの場合*/
+@media screen and (orientation:portrait) {
+    p {
+        font-size: 0.8em;
+    }
+}
+
+/*横向きの場合*/
+@media screen and (orientation:landscape) {
+    p {
+        font-size: 1em;
+    }
+}
+
 @media  (max-width: 768px){
 .wrapper {
         width: 100%;
@@ -5,7 +19,10 @@
         font-family: Noto Sans JP, sans-serif;
     }
 .hero {
-    background-image: url(../../pics/img/top_image_mobile.jpg);
+    overflow: hidden;
+    background: url(../../pics/img/top_image_iphone.jpg) no-repeat center/ cover;
+    height: 90%;
+    width: 100%;
 }
 /* ハンバーガーメニューのスタイル */
 .right-header {

@@ -17,6 +17,7 @@ p{
     letter-spacing: 0.2cap;
     font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     color: #383737;
+    margin: 20px;
 }
 h2 {
     font-family: "Noto Serif", serif;
@@ -429,8 +430,8 @@ html {
 }
 /* WORK　part2内容 */
 .work-item {
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 300px;
     margin: 20px auto;
     padding: 20px;
     box-sizing: border-box;
@@ -443,6 +444,169 @@ html {
     margin: 40px auto 0 auto;
     padding: 20px;
 }
+
+/************* works 下層ページ *************/
+.works-wrap {
+    margin: 0 auto;
+}
+
+p.worksPage-title-sub {
+    margin: 100px 0 20px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .2rem;
+}
+
+p.worksPage-title-sub::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    margin: 10px auto 30px;
+    background: #333;
+}
+
+h2.worksPage-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .2rem;
+    line-height: 1.8;
+    font-family: 'Unna', serif;
+}
+
+img.worksPage-image {
+    margin: 10px 0;
+}
+
+img.flex-2 {
+    width: 40%;
+}
+
+dl.worksPage-summary {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0 100px;
+}
+dt.works-list {
+    display: block;
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+    color: #afafaf;
+    font-weight: 500;
+}
+
+dt.works-list::after {
+    content: '';
+}
+
+dd.works-text {
+    width: 75%;
+    margin-bottom: 30px;
+    vertical-align: baseline;
+}
+
+dl.worksPage-summary-web {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 75px 0 60px;
+}
+
+dd.works-text-web {
+    width: 75%;
+    margin-bottom: 20px;
+    vertical-align: baseline;
+}
+
+a.worksUrl:hover {
+    opacity: .6;
+}
+
+.wedding-flexAll {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3.works-item-memo {
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: .1em;
+    margin: 5px 0 30px;
+    font-family: sans-serif;
+}
+
+h3.works-item-memo.insta {
+    margin-bottom: 0;
+}
+
+.worksPage-image-3 {
+    width: 31%;
+}
+
+.works-babyposter-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-top: 20px;
+    background: #efefef;
+}
+
+.pc-none {
+    display: none;
+}
+
+.twitter-tweet {
+    margin: 0 auto;
+}
+
+/* 600px以上で適応 */
+@media (min-width: 601px) {
+    .career-flex {
+        display: flex;
+        border-left: none;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .career-flexInner-left {
+        width: 15%;
+        padding-top: 35px;
+    }
+
+    .career-flexInner-right {
+        width: 85%;
+        border-left: 2px solid #ddd;
+        padding-left: 8%;
+        padding-top: 35px;
+        position: relative;
+        font-size: 15px;
+    }
+
+    .career-flexInner-right::before {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #92BDE6;
+        position: absolute;
+        top: 45px;
+        left: -8px;
+    }
+}
+
+.br-sp,
+p.works-item-memo-sp {
+    display: none;
+}
+
+/************* works 下層ページ *************/
+
+
+
+
 
 
 /************* Footer *************/

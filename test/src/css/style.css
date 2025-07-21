@@ -282,10 +282,9 @@ home{
     scroll-snap-stop: always;
     /* スムーズにスクロールさせる */
     scroll-behavior: smooth;
+    scrollbar-width: none;
     /* インジケーターの表示 */
     scroll-marker-group: after;
-    /* スクロールバー非表示 */
-    scrollbar-width: none;
 
     /* 前へ・次へボタン */
     &::scroll-button(*) {
@@ -329,14 +328,17 @@ home{
     }
     /* インジケーター（コンテナー） */
     &::scroll-marker-group{
-        display: flex;
-        justify-content: center;
-        gap: 16px;
         grid-area: markers;
-        align-items: center;
+        display: grid;
+        place-content: safe center;
+        grid: 30px / auto-flow 30px;
+        gap: 10px;
+        padding: 15px;
+        scroll-padding: 15px;
+        overflow: auto;
         scroll-snap-type: x mandatory;
         overscroll-behavior-x: contain;
-        margin: 0 auto;
+        scrollbar-width: none;
     }
 }
 /* ----------------------*
@@ -353,6 +355,7 @@ home{
         align-items: center;
         justify-content: center;
         font-size: 24px;
+        border-radius: 10px;
         box-shadow: 8px 8px 0px 0 #fadadf;
 
     /* インジケーター */

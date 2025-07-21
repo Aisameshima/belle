@@ -11,6 +11,25 @@
     height: 100px;
     width: 100%;
 }
+p{
+    font-size: 2.0em;
+    line-height: 1.5em;
+    letter-spacing: 0.2cap;
+    font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: #383737;
+}
+h2 {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #484646;
+    letter-spacing: 0.1cap;
+    line-height: 1.5cap;
+
+    margin: 0 auto;
+    border-left: #dd919e solid 1px ;
+}
 
 .header .header-inner {
     position: relative;
@@ -160,10 +179,7 @@ main {
     flex-wrap: wrap;
     padding: 20px 0;
 }
-h2{
-    font-family: Unna, serif ;
 
-}
 
 main.home h2{
     text-align: center;
@@ -196,8 +212,10 @@ home{
 .about_myself {
         margin: 20px auto 20px auto;
         padding: 20px;
-        font-family: "Delius", cursive;
-        font-weight: 400;
+        font-family: "Noto Serif", serif;
+        font-optical-sizing: auto;
+        font-size: 2.0rem;
+        font-weight: 500;
         font-style: normal;
 }
 .about_myself p{
@@ -439,7 +457,8 @@ footer {
     padding: 0;
 }
 .footer-logo{
-    font-family: "Delius", cursive;
+    font-family: "Noto Serif",
+        serif;
     font-weight: 400;
     font-style: normal;
     padding: 0 0 0 40px;

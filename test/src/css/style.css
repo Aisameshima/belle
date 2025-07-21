@@ -209,24 +209,31 @@ home{
 
 }
 /************* 上へ戻る *************/
-#to-top {
-    opacity: 0;
+html {
+    scroll-behavior: smooth;
 }
 
-#to-top.is-show {
+.page_top {
+    height: 50px;
+    width: 50px;
     position: fixed;
-    color: #333;
-    font-size: 50px;
-    opacity: 0.6;
-    transition: opacity 2s;
-    cursor: pointer;
-    bottom: 15px;
-    right: 15px;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #383b3b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
-#to-top:hover {
-    transition: .5s;
-    bottom: 25px;
+.page_top__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #383b3b;
+    border-right: 3px solid #383b3b;
+    transform: translateY(20%) rotate(-45deg);
 }
 
 

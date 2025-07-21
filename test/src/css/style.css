@@ -110,7 +110,7 @@
 main {
     max-width: 100%;
     min-height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 /* ヒーローからメニュー */
@@ -160,6 +160,10 @@ main {
     flex-wrap: wrap;
     padding: 20px 0;
 }
+h2{
+    font-family: Unna, serif ;
+
+}
 
 main.home h2{
     text-align: center;
@@ -188,6 +192,7 @@ home{
     background-color: #fff;
     border-radius: 30px;
 }
+/* プロフィール */
 .about_myself {
         margin: 20px auto 20px auto;
         padding: 20px;
@@ -195,7 +200,8 @@ home{
         font-weight: 400;
         font-style: normal;
 }
-.contents-wrapper .about_myself p{
+.about_myself p{
+    width: 80%;
     text-align: center;
     color: #666;
     margin: 40px 0;
@@ -239,8 +245,15 @@ html {
 
 /************* Works *************/
 #works{
-    width: 80%;
+    width: 100%;
     margin: 50px auto;
+    box-sizing: border-box;
+    background-color: rgb(248, 243, 245);
+}
+.contents-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -362,7 +375,8 @@ html {
         justify-content: center;
         font-size: 24px;
         border-radius: 10px;
-        box-shadow: 8px 8px 0px 0 #fadadf;
+        border: #e2dfdf solid 1px;
+        box-shadow: 8px 8px 0px 0 rgb(254, 173, 179);
 
     /* インジケーター */
     &::scroll-marker {
@@ -382,10 +396,6 @@ html {
         border-radius: 50%;
     }
 }
-
-
-
-
 /* WORK　part2内容 */
 .work-item {
     width: 200px;
@@ -407,7 +417,7 @@ html {
 /************* Footer *************/
 footer {
     max-width: 100%;
-    background-color: #dcdcdc;
+    background-color: rgb(230, 217, 219);
     padding: 20px;
     height: 40vh;
     box-sizing: border-box;
@@ -425,6 +435,7 @@ footer {
     /* 項目間の余白（任意） */
     list-style: none;
     /* 点を消す（任意） */
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
 }
 .footer-logo{
@@ -445,6 +456,7 @@ footer {
 footer p {
     text-align: center;
     color: #666;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     margin-top: 20px;
 }

@@ -9,13 +9,19 @@
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Delius&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" rel="stylesheet">
-
+    href="https://fonts.googleapis.com/css2?family=Delius&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" rel="javascript"></script>
+  <script src="../src/javascript/hamberger.js" rel="javascript"></script>
+  <script src="../src/javascript/move_to_bottom.js" rel="javascript"></script>
+  <script src="../src/javascript/toTopBTn.js" rel="javascript"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+    type="text/javascript"></script>
 
 </head>
 
@@ -25,7 +31,7 @@
       <!--ロゴからメニュー -->
       <div class="left-header">
         <div class="header-logo">
-          <h1 class="title-logo">デザインをつくる</h1>
+          <h1 class="title-logo" id="home">デザインをつくる</h1>
         </div>
         <nav class="header-menu">
           <!--メインメニュー -->
@@ -56,7 +62,7 @@
       <!-- ハンバーガーメニューのナビゲーション -->
       <ul>
         <div class="header-menu-list">
-          <li><a href="#">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#works">Works</a></li>
           <li><a href="#about-myself">Profile</a></li>
           <li><a href="#">Contact</a></li>
@@ -68,20 +74,9 @@
         </div>
       </ul>
     </div>
-    <script>
-      // ハンバーガーメニューのクリックイベント
-      document.addEventListener('DOMContentLoaded', () => {
-          const hamburger = document.getElementById('hamburger');
-          const menu = document.getElementById('header-menu-nav');
+<!--上へ戻る -->
+  <div id="to-top" class="to-top">↑</div>
 
-          if (hamburger && menu) {
-            hamburger.addEventListener('click', () => {
-              menu.classList.toggle('active');
-              hamburger.classList.toggle('active');
-            });
-          }
-        });
-    </script>
   <div class="wrapper">
       <main>
         <div class="hero">
@@ -94,30 +89,32 @@
             </div>
           </section>
         </div>
-<!--コメント -->
-      <section id="about-myself">
-        <div class="contents-wrapper">
-          <div class="about">
-            <div class="about-myself">
-              <h2>About Myself</h2>
-              <p>新米デザイナーとしての日々を送ってます</p>
-              <p>スキル：Illustrator, Photoshop, HTML, CSS</p>
-            </div>
+<!--Myself -->
+        <section id="about-myself"></section>
+          <div class="contents-wrapper">
+              <div class="about">
+                <div class="about-myself">
+                  <h2>About Myself</h2>
+                  <p>新米デザイナーとしての日々を送ってます</p>
+                  <p>スキル：Illustrator, Photoshop, HTML, CSS</p>
+                </div>
 
-              <img id="my_picture" src="../pics/img/girl.jpg" alt="Profile Image">
+                  <img id="my_picture" src="../pics/img/My picture.jpg" alt="Profile Image">
+              </div>
 
           </div>
-        </div>
-      </section>
-<!--コメント -->
+        </section>
+
+<!--WORK -->
         <span class="works-title">
           <section id="works">
             <h2>My Works</h2>
               <div class="scroll-layout">
                 <div class="carousel">
                   <ul class="content">
-                    <li><img clas src="../pics/img/thumbnail/1.png" alt="1"></li>
-                    <li>2</li>
+                    <li><a href="../pics/img/banner/01_banner1.jpg" data-lightbox="group"><img src="../pics/img/thumbnail/1.jpg" alt=""
+                          width="200"></a></li>
+                    <li><a href="../pics/img/banner/02_bike.png" data-lightbox="group"><img src="../pics/img/thumbnail/2.png" alt="" width="200"></a></li>
                     <li>3</li>
                     <li>4</li>
                     <li>5</li>

@@ -289,7 +289,6 @@ html {
     scroll-snap-stop: always;
     /* スムーズにスクロールさせる */
     scroll-behavior: smooth;
-    scrollbar-width: none;
     /* インジケーターの表示 */
     scroll-marker-group: after;
 

@@ -36,9 +36,9 @@
         <nav class="header-menu">
           <!--メインメニュー -->
           <ul>
-            <li><a class="nav-item"  href="main_test.html#home">Home</a></li>
-            <li><a class="nav-item" href="main_test.html#about-myself">Profile</a></li>
-            <li><a class="nav-item"  href="main_test.html#works">Works</a></li>
+            <li><a class="nav-item"  href="#">Home</a></li>
+            <li><a class="nav-item"  href="#about-myself">Profile</a></li>
+            <li><a class="nav-item"  href="#works">Works</a></li>
             <li><a class="nav-item"  href="#">Contact</a></li>
             <li><a href="https://www.instagram.com/"><img src="../pics/img/svg/01_instagram.svg" alt="instagram"></a></li>
             <li><a href="https://www.facebook.com/"><img src="../pics/img/svg/02_facebook.svg" alt="facebook"></a></li>
@@ -60,57 +60,101 @@
     </header>
     <div id="header-menu-nav" class="header-menu-nav">
       <!-- ハンバーガーメニューのナビゲーション -->
-      <ul>
-        <div class="header-menu-list">
-          <li><a class="nav-item" href="main_test.html#home">Home</a></li>
-          <li><a class="nav-item" href="main_test.html#about-myself">Profile</a></li>
-          <li><a class="nav-item"  href="main_test.html#works">Works</a></li>
+      <div class="header-menu-list">
+        <ul>
+          <li><a class="nav-item" href="#home">Home</a></li>
+          <li><a class="nav-item"  href="#works">Works</a></li>
+          <li><a class="nav-item"  href="#about-myself">Profile</a></li>
           <li><a class="nav-item"  href="#">Contact</a></li>
-        </div>
-        <div class="header-menu-social">
+        </ul>
+      </div>
+      <!-- SNSアイコン -->
+      <div class="header-menu-social">
+        <ul class="header-menu-social">
           <li><a href="https://www.instagram.com/"><img src="../pics/img/svg/01_instagram.svg" alt="instagram"></a></li>
           <li><a href="https://www.facebook.com/"><img src="../pics/img/svg/02_facebook.svg" alt="facebook"></a></li>
           <li><a href="https://www.line.com/"><img src="../pics/img/svg/03_line.svg" alt="line"></a></li>
-        </div>
-      </ul>
+        </ul>
     </div>
 <!--上へ戻る -->
-  <a class="page_top" href="#home">
-    <div class="page_top__arrow"></div>
-  </a>
+  <div id="to-top" class="to-top">↑</div>
 
   <div class="wrapper">
       <main>
-                <p class="worksPage-title-sub">Magazine</p>
-                <h2 class="worksPage-title">架空雑誌の表紙デザイン</h2>
-                <div class="contents-wrapper">
-                <img class="worksPage-image" src="../pics/img/work1/1_layout.jpg" width="300px" height="auto" alt="layout1">
-                <img class="worksPage-image" src="../pics/img/work1/2_layout.jpg" width="300px" height="auto" alt="layout2">
-
-
-                  <dl class="worksPage-summary">
-                    <dt class="works-list">概要</dt>
-                    <dd class="works-text">ジュリー珈琲様のロゴ<br>（クラフトスリーブに押す消しゴムハンコ用のため白黒）</dd>
-                    <dt class="works-list">制作の目的</dt>
-                    <dd class="works-text">オリジナルロゴを使用することでお客様の記憶に残り、信頼して頂くため。
-                      写真に撮りたくなるデザインでSNSでの集客効果も見込む。</dd>
-                    <dt class="works-list">デザイン</dt>
-                    <dd class="works-text">
-                      職人さんこだわりの丸くて可愛い店舗の外観をモチーフに、あたたかみのある手書きのイラストを使用。
-                      お店の名前の由来をもとに太陽のイラストを使い、わかる人にはわかる、わからなくても違和感がない明るく可愛い印象のロゴになりました。
-                    </dd>
-                    <dt class="works-list">制作期間</dt>
-                    <dd class="works-text">4日</dd>
-                    <dt class="works-list">使用ツール</dt>
-                    <dd class="works-text">Illustrator</dd>
-                  </dl>
+        <div class="hero">
+          <section class="home">
+            <div class="hero-inner">
+              <div class="hero-title">
+                <h2 class="about_myself">Ai Sameshima</h2>
+                <p class="sub-title">デザインをつくる</p>
                 </div>
+            </div>
+          </section>
+        </div>
+<!--Myself -->
+        <section id="about-myself"></section>
+          <div class="contents-wrapper">
+              <div class="about">
+                <div class="about-myself">
+                  <h2>About Myself</h2>
+                  <p>新米デザイナーとしての日々を送ってます</p>
+                  <p>スキル：Illustrator, Photoshop, HTML, CSS</p>
+                </div>
+
+                  <img id="my_picture" src="../pics/img/My picture.jpg" alt="Profile Image">
+              </div>
+
+          </div>
+        </section>
+
+<!--WORK -->
+        <span class="works-title">
+          <section id="works">
+            <h2>My Works</h2>
+              <div class="scroll-layout">
+                <div class="container">
+                  <ul class="carousel">
+                    <li class="item"><a href="../pics/img/banner/01_banner1.jpg" data-lightbox="group"><img src="../pics/img/thumbnail/1.jpg" alt=""
+                          width="200"></a></li>
+                    <li class="item"><a href="../pics/img/banner/02_bike.png" data-lightbox="group"><img src="../pics/img/thumbnail/2.png" alt="" width="200"></a></li>
+                    <li class="item">3</li>
+                    <li class="item">4</li>
+                    <li class="item">5</li>
+                    <li class="item">6</li>
+                    <li class="item">7</li>
+                    <li class="item">8</li>
+
+                  </ul>
+                </div>
+              </div>
+
+    <div class="works-wrapper">
+              <div class="work-item">
+                <h3>Work Title 1</h3>
+                <p>Description of work 1.</p>
+              </div>
+              <div class="work-item">
+                <h3>Work Title 2</h3>
+                <p>Description of work 2.</p>
+              </div>
+              <div class="work-item">
+                <h3>Work Title 3</h3>
+                <p>Description of work 3.</p>
+              </div>
+            </div>
+          </section>
+        </span>
+<!--コメント -->
+          <section id="contact">
+            <h2 class="contact">Contact Me</h2>
+            <p>お問い合わせはこちらから。</p>
+          </section>
       </main>
 
       <footer>
         <div class="footer-inner">
           <div class="footer-logo">
-            <h2 class="footer_titile">デザインをつくる</h2>
+            <h1>Ai Sameshima</h1>
           </div>
             <ul class="footer-menu">
               <li><a href="#">Home</a></li>

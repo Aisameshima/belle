@@ -190,10 +190,25 @@
 .hero {
     background: url(../../pics/img/top_image_iphone.jpg) no-repeat center/ cover;
 }
+.contents-wrapper{
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+.main_titile {
+    font-size: 2.0rem;
 
+}
+.about {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
 .about_myself {
     font-size: 2.0rem;
 }
+.contents-wrapper
 
 }
 .footer_titile {

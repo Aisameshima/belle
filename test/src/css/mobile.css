@@ -196,4 +196,14 @@
 }
 
 }
+.footer_titile {
+    font-family: "YosugaraVer1.2", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align:left;
+    color: #333;
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+}
 }

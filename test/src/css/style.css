@@ -454,9 +454,37 @@ html {
     border-radius: 10px;
     box-shadow: 5px 5px 10px -8px rgb(0 0 0 / 30%)
 }
-#contact{
-    margin: 0px auto;
-    padding: 20px;
+.work-item-list{
+    border-bottom: 2px solid #dd929e;
+}
+.view{
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    color: #dd929e;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 200px;
+}
+.yazirusi {
+    display: flex;
+}
+
+.yazirusi::after {
+    content: '';
+    width: 100px;
+    height: 15px;
+    border-bottom: solid 2px;
+    border-right: solid 2px;
+    color: #A5D0F8;
+    transform: skew(45deg);
+    position:absolute;
+    right:190px;
+    margin: 18px 0 0 20px   ;
 }
 
 /************* works 下層ページ *************/
@@ -619,7 +647,10 @@ p.works-item-memo-sp {
 /************* works 下層ページ *************/
 
 
-
+#contact {
+    margin: 0px auto;
+    padding: 20px;
+}
 
 
 

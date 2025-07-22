@@ -198,7 +198,9 @@
 }
 .main_titile {
     font-size: 2.0rem;
-
+}
+.sub-title{
+    font-size: 1.2rem;
 }
 .about {
     width: 100%;

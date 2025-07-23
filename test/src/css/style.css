@@ -457,11 +457,15 @@ html {
 .work-item-list{
     border-bottom: 2px solid #dd929e;
 }
-
 img.works1 {
     margin: 10px auto;
     display: block;
 }
+video.works2 {
+    margin: 10px auto;
+    display: block;
+}
+
 .view{
     margin: 10px auto;
     padding: 10px;
@@ -641,7 +645,7 @@ p.works-item-memo-sp {
     padding:20px;
     color: #fff;
     background-color: #a9a9a9;
-    border:  1px dotted #ddd;
+    border:  3px dotted #ddd;
 }
 
 

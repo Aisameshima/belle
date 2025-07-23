@@ -452,8 +452,36 @@ html {
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px -8px rgb(0 0 0 / 30%)
+    box-shadow: 5px 5px 10px -8px rgb(0 0 0 / 30%);
+    animation: fade-in 3s;
+    animation-fill-mode: forwards;
+
+    @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
 }
+/*ふわっと表示 */
+  animation: fade-in 3s;
+  animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-in {
+      from {
+          opacity: 0;
+      }
+
+      to {
+          opacity: 1;
+      }
+  }
+
+
 .work-item-list{
     border-bottom: 2px solid #dd929e;
 }

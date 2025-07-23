@@ -474,25 +474,32 @@ video.works2 {
     font-weight: bold;
     cursor: pointer;
     line-height: 0;
-    text-decoration-color: #666;
+    text-decoration: none;
 }
 /************* works 下層ページ *************/
+.Works-detail{
+    width: 100%;
+}
 .works-wrap {
     margin: 0 auto;
+
 }
 
 p.worksPage-title-sub {
-    margin: 100px 0 20px;
+    margin: 80px 0 20px;
     text-align: center;
-    font-size: 14px;
-    letter-spacing: .2rem;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
 }
 
 
 h2.worksPage-title {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     letter-spacing: .2rem;
     line-height: 1.8;
@@ -500,17 +507,23 @@ h2.worksPage-title {
 }
 
 img.worksPage-image {
-    margin: 10px 0;
+    margin: 10px auto;
+    padding:5px;
 }
 
 img.flex-2 {
     width: 40%;
 }
+.worksPage-image_2{
+    width: 40%;
+    margin: 0 5%;
+    padding: 10px;
+}
 
 dl.worksPage-summary {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px 0 100px;
+    margin:40px 0 40px;
 }
 dt.works-list {
     display: block;
@@ -547,10 +560,6 @@ a.worksUrl:hover {
     opacity: .6;
 }
 
-.wedding-flexAll {
-    display: flex;
-    justify-content: space-between;
-}
 
 h3.works-item-memo {
     font-size: 14px;
@@ -562,10 +571,6 @@ h3.works-item-memo {
 
 h3.works-item-memo.insta {
     margin-bottom: 0;
-}
-
-.worksPage-image-3 {
-    width: 31%;
 }
 
 .works-babyposter-flex {

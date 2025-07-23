@@ -446,7 +446,7 @@ html {
 /* WORK　part2内容 */
 .work-item {
     width: 800px;
-    height: 300px;
+    height: 400px;
     margin: 20px auto;
     padding: 20px;
     box-sizing: border-box;
@@ -457,46 +457,21 @@ html {
 .work-item-list{
     border-bottom: 2px solid #dd929e;
 }
+
+img.works1 {
+    margin: 10px auto;
+    display: block;
+}
 .view{
-    width: 100px;
-    height: 30px;
-    padding: 100px 0 0 600px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: right;
     color: #dd929e;
     font-weight: bold;
     cursor: pointer;
     line-height: 0;
-    text-decoration: none;
+    text-decoration-color: #666;
 }
-.view:before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    background: #333;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.view:after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border: 0;
-    border-top: solid 2px #fff;
-    border-right: solid 2px #fff;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    left: 4px;
-    bottom: 0;
-    margin: auto;
-}
-
 /************* works 下層ページ *************/
 .works-wrap {
     margin: 0 auto;
@@ -509,14 +484,6 @@ p.worksPage-title-sub {
     letter-spacing: .2rem;
 }
 
-p.worksPage-title-sub::after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 1px;
-    margin: 10px auto 30px;
-    background: #333;
-}
 
 h2.worksPage-title {
     text-align: center;
@@ -525,7 +492,7 @@ h2.worksPage-title {
     font-weight: normal;
     letter-spacing: .2rem;
     line-height: 1.8;
-    font-family: 'Unna', serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 img.worksPage-image {

@@ -144,7 +144,15 @@
     margin: 0 5%;
     padding: 10px;
 }
+.Page-image-item:nth-child(2) {
+    width: 300px;
+    height: 100px;
 }
+.worksPage-image_2 {
+    width: 100%;
+}
+}
+
 @media (max-width: 428px) {
 .title-logo {
         font-size: 1.5rem;
@@ -261,5 +269,17 @@ img.works_pic {
     width: 50%;
     margin: 0 20%;
     padding: 10px;
+}
+
+.worksPage-image_2 {
+    gap: 20px;
+}
+.Page-image-item:nth-child(2) {
+    width: 100%;
+    height: auto;
+}
+.Page-image-item:nth-child(3) {
+    width: 170px;
+    height: 150px;
 }
 }

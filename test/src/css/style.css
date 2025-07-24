@@ -445,30 +445,39 @@ html {
 }
 /* WORK　part2内容 */
 .work-item {
-    width: 800px;
-    height: 400px;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
     margin: 20px auto;
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 10px -8px rgb(0 0 0 / 30%);
+
+    /* アニメーション前の初期状態 */
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.3s ease-out;
 }
 
 /*ふわっと表示 */
-@keyframes fade-in {
-    from {
+@keyframes scroll_animation {
+    0% {
         opacity: 0;
+        transform: translateY(30px);
     }
 
-    to {
+    100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
-start_animation_scroll{
-    animation-name: fade-in;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+.start_animation_scroll {
+    animation-name: scroll_animation;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
 }
 
 .work-item-list{
@@ -647,6 +656,17 @@ p.works-item-memo-sp {
     display: none;
 }
 
+
+
+/************* Movie *************/
+.responsive {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+
+
+
 /************* works 下層ページ *************/
 
 
@@ -659,6 +679,9 @@ p.works-item-memo-sp {
     width: 40%;
     text-align: center;
     margin: 0 auto;
+}
+a{
+        text-decoration: none;
 }
 .contact_me{
     font-size: 1.2rem;

@@ -154,6 +154,9 @@
         padding: 10px 20px;
         font-weight: bold;
     }
+.header-menu-nav a{
+    font-size: 1.2rem;
+}
 
 .hamburger {
     display: flex;
@@ -219,6 +222,16 @@
 .about_myself {
     font-size: 2.0rem;
 }
+img.works_pic {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.works2{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
 /************* works 下層ページ *************/
 
 
@@ -238,10 +251,10 @@
     font-family: "YosugaraVer1.2", sans-serif;
     font-weight: 300;
     font-size: 1.3rem;
-    text-align:left;
+    text-align:center;
     color: #333;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px;
     font-weight: bold;
 }
 .worksPage-image_2 {

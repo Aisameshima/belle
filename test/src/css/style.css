@@ -659,13 +659,13 @@ p.works-item-memo-sp {
 .Page-image{
     max-width: 70%;
     height: auto;
-    margin: 0 auto;
+    margin: 50px auto;
     display: block;
     padding: 10px;
 }
 .worksPage-image_2{
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto 50px auto;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -685,49 +685,29 @@ p.works-item-memo-sp {
     height: 150px;
 }
 /************* ボタン *************/
+/*主な共通部分は省略*/
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
 a.btn-border {
-    border: 2px solid #000;
+    border: 3px solid #dfe2ea;
     border-radius: 0;
-    background: #fff;
-    -webkit-transform-style: preserve-3d;
-
-    transform-style: preserve-3d;
-}
-
-a.btn-border:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 15px;
-    height: 100%;
-
-    content: '';
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0);
-
-    border-radius: 0 50% 50% 0;
-    background: #000;
-}
-
-a.btn-border:hover:before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: bold;
-    line-height: 30px;
-
-    width: 30px;
-    height: 30px;
-
-    content: '\f061';
-    -webkit-transform: translateX(460%) translateY(.5rem);
-    transform: translateX(460%) translateY(.5rem);
-
     color: #fff;
-    border-radius: 50%;
+    padding: 15px;
+    font-weight: 350;
+    background-color: #2C8BC2;
+    border-radius: 10px;
+    margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+a.btn-border:hover {
+    color: #fff;
+    background: #87d1ed;
+}
 /************* Movie *************/
 .responsive {
     width: 100%;

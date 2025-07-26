@@ -545,10 +545,7 @@ img.worksPage-image {
     padding:5px;
 }
 
-img.flex-2 {
-    width: 40%;
-}
-.worksPage-image_2{
+.worksPage-image_svg{
     width: 40%;
     margin: 0 5%;
     padding: 10px;
@@ -578,22 +575,6 @@ dd.works-text {
     vertical-align: baseline;
 }
 
-dl.worksPage-summary-web {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 75px 0 60px;
-}
-
-dd.works-text-web {
-    width: 75%;
-    margin-bottom: 20px;
-    vertical-align: baseline;
-}
-
-a.worksUrl:hover {
-    opacity: .6;
-}
-
 
 h3.works-item-memo {
     font-size: 14px;
@@ -603,66 +584,6 @@ h3.works-item-memo {
     font-family: sans-serif;
 }
 
-h3.works-item-memo.insta {
-    margin-bottom: 0;
-}
-
-.works-babyposter-flex {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    margin-top: 20px;
-    background: #efefef;
-}
-
-.pc-none {
-    display: none;
-}
-
-.twitter-tweet {
-    margin: 0 auto;
-}
-
-/* 600px以上で適応 */
-@media (min-width: 601px) {
-    .career-flex {
-        display: flex;
-        border-left: none;
-        padding-left: 0;
-        padding-top: 0;
-    }
-
-    .career-flexInner-left {
-        width: 15%;
-        padding-top: 35px;
-    }
-
-    .career-flexInner-right {
-        width: 85%;
-        border-left: 2px solid #ddd;
-        padding-left: 8%;
-        padding-top: 35px;
-        position: relative;
-        font-size: 15px;
-    }
-
-    .career-flexInner-right::before {
-        content: '';
-        display: block;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background: #92BDE6;
-        position: absolute;
-        top: 45px;
-        left: -8px;
-    }
-}
-
-.br-sp,
-p.works-item-memo-sp {
-    display: none;
-}
 /************* WEB Page *************/
 .Page-image{
     max-width: 70%;

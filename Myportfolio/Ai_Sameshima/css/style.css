@@ -663,7 +663,9 @@ a.btn-border:hover {
     width: 100%;
     aspect-ratio: 16/9;
 }
-
+.iframe {
+    border: 0;
+}
 
 
 
